@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Automatic_Teller_Simulator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Main Window" Height="450" Width="800">
     <Grid>
-        
+        <Button 
+            Content="Login"
+            Width="200"
+            Height="50"
+            Background="Green"
+            Foreground="White"
+            FontWeight="Bold"
+            FontSize="16"
+            x:Name="btnLogin" Click="BtnLogin_Click"/>
     </Grid>
 </Window>

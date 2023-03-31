@@ -1,0 +1,90 @@
+﻿<Window x:Class="Automatic_Teller_Simulator.Forms.frmSupervisor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Automatic_Teller_Simulator.Forms"
+        mc:Ignorable="d"
+        Title="Supervisor Window" Height="450" Width="800">
+    <Grid>
+        <Label
+            Content="Select Account:"
+            Margin="10,10"
+            FontSize="16"
+            Visibility="Collapsed"
+            />
+        <ComboBox
+            Visibility="Collapsed"
+            x:Name="cboAccount"
+            Width="450"
+            Height="35"
+            Margin="10,40"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            />
+        <Label
+            x:Name="lblTitle"
+            Content="Account Report:"
+            Margin="10,100"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Width="155"
+            Height="35"
+            FontSize="16"
+            />
+        <TextBox
+            x:Name="txtReport"
+            Width="450"
+            Margin="10,130,0,10"
+            HorizontalAlignment="Left"
+            />
+        <Button x:Name="btnPrint" 
+                Content="Print" 
+                HorizontalAlignment="Left" 
+                Margin="478,376,0,0" 
+                VerticalAlignment="Top"
+                Width="140" Height="33" Click="BtnPrint_Click"/>
+        <Button x:Name="btnClose" 
+                Click="BtnClose_Click"
+                Content="Close" 
+                HorizontalAlignment="Left" 
+                Margin="630,376,0,0" 
+                VerticalAlignment="Top"
+                Width="140" Height="33"/>
+        <Button x:Name="btnRefill" 
+            Content="Refill" 
+            HorizontalAlignment="Left" 
+            Margin="478,326,0,0" 
+            VerticalAlignment="Top"
+            Width="140" Height="33" Click="BtnRefill_Click"/>
+        <Button x:Name="btnAtmState" 
+            Content="Take Offline" 
+            HorizontalAlignment="Left" 
+            Margin="630,326,0,0" 
+            VerticalAlignment="Top"
+            Width="140" Height="33" 
+            Click="BtnAtmState_Click"/>
+        <Button x:Name="btnPayInterest" 
+            Content="Pay Interest" 
+            HorizontalAlignment="Left" 
+            Margin="630,130,0,0" 
+            VerticalAlignment="Top"
+            Width="140" Height="33" 
+            Click="BtnPayInterest_Click"/>
+        <TextBox
+            x:Name="txtInterest"
+            Width="140"
+            Margin="478,130,0,256"
+            HorizontalAlignment="Left"
+            />
+        <Label
+            Content="Interest Amount:"
+            Margin="478,95,0,0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Width="155"
+            Height="35"
+            FontSize="16"
+            />
+    </Grid>
+</Window>
